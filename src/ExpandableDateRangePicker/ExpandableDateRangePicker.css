@@ -1,0 +1,59 @@
+.expandable-picker {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .expandable-picker.expanded {
+    height: 250px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  
+  .icon {
+    font-size: 16px;
+  }
+  
+  .picker-container {
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 100%;
+    
+  }
+  
+  .picker {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+  label {
+    display: block;
+    margin: 7px;
+  }
+  .e-calendar {
+    background-color: peachpuff;
+    border: 3px solid red;
+}
+
+.custom-datetime-picker {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-calendar-icon {
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+}

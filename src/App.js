@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+ import './App.css';
+ import {useProducts} from "./hooks/useProducts";
+ import {ProductsList} from './ProductsList';
+ import {ProductFilter} from './ProductFilter';
+ import DatePicker from "react-datepicker";
 
 function App() {
+  
+  const products = useProducts();
+  console.log("products in app",products)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Nvidia Home Assignment - Lital Hadad</h1>
+      <div className="center">
+        <ProductFilter/>
+        {products && products.length > 0  && <ProductsList products={products} />}
+      </div>
     </div>
   );
 }
