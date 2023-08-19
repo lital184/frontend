@@ -2,7 +2,9 @@
  import {useProducts} from "./hooks/useProducts";
  import {ProductsList} from './ProductsList';
  import {ProductFilter} from './ProductFilter';
- import DatePicker from "react-datepicker";
+ import DownloadCSVButton from './DownloadCSVButton';
+ import YieldOverTimeChart from './YieldOverTimeChart';
+
 
 function App() {
   
@@ -12,10 +14,12 @@ function App() {
   return (
     <div className="App">
       <h1>Nvidia Home Assignment - Lital Hadad</h1>
-      <div className="center">
+      {/* <div className="center">
         <ProductFilter/>
         {products && products.length > 0  && <ProductsList products={products} />}
       </div>
+      <DownloadCSVButton data={products} fileName="manufactor_raw_data" /> */}
+      <YieldOverTimeChart/>
     </div>
   );
 }
